@@ -1,0 +1,23 @@
+/* Shared by the editor, public scene and transparent output. Small 2D image
+   transforms, with separate clipped mouth artwork; no skeletal rig. */
+.stage-actor .motion-art-area{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:82%;min-height:0;flex:1 1 auto}
+.stage-actor .motion-frame{position:relative;flex:none;width:100%;height:100%;max-width:100%;max-height:100%;pointer-events:none}
+.stage-actor .motion-gesture,.stage-actor .motion-breath,.stage-actor .motion-sway{position:absolute;inset:0;width:100%;height:100%;transform-origin:50% 85%}
+.stage-actor .motion-gesture{animation-timing-function:ease-in-out;animation-iteration-count:1;animation-fill-mode:none}
+.stage-actor .motion-breath{animation:none}
+.stage-actor.motion-enabled .motion-breath{animation:studio-breathe 3.7s ease-in-out infinite}
+.stage-actor.motion-enabled.motion-speaking .motion-sway{animation:studio-speaking 1.25s ease-in-out infinite}
+.stage-actor.raster-actor img.motion-base,.stage-actor.raster-actor img.motion-mouth-image{position:absolute;inset:0;display:block;width:100%;height:100%;min-height:0;max-width:none;max-height:none;object-fit:fill;flex:none;user-select:none;pointer-events:none}
+.stage-actor .motion-mouth-mask{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.stage-actor .motion-mouth-image{transform:scaleY(var(--mouth-scale,1));transition:transform 55ms linear}
+.stage-actor .motion-mouth-mask[hidden]{display:none!important}
+.stage-actor .motion-vector svg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.stage-actor .actor-label{position:relative;flex:0 0 auto;z-index:1}
+.stage-actor .actor-pose{opacity:.8;font-size:.85em}
+@keyframes studio-breathe{0%,100%{transform:translateY(0) scaleY(1)}50%{transform:translateY(var(--breath-lift)) scaleY(var(--breath-scale))}}
+@keyframes studio-speaking{0%,100%{transform:rotate(0deg)}30%{transform:rotate(var(--sway-angle))}70%{transform:rotate(calc(-1 * var(--sway-angle)))}}
+@keyframes studio-nod{0%,100%{transform:translateY(0) scaleY(1)}32%,70%{transform:translateY(var(--nod-lift)) scaleY(var(--nod-scale))}52%{transform:translateY(0) scaleY(1)}}
+@keyframes studio-shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(calc(-1 * var(--shake-shift)))}40%,80%{transform:translateX(var(--shake-shift))}}
+@keyframes studio-happy{0%,100%{transform:translateY(0)}28%,66%{transform:translateY(var(--happy-lift))}46%,83%{transform:translateY(0)}}
+@keyframes studio-greet{0%,100%{transform:rotate(0deg)}25%,65%{transform:rotate(var(--greet-angle))}45%,82%{transform:rotate(calc(-1 * var(--greet-angle)))}}
+@media(prefers-reduced-motion:reduce){.stage-actor .motion-breath,.stage-actor .motion-sway,.stage-actor .motion-gesture{animation:none!important}.stage-actor .motion-mouth-image{transition:none}}

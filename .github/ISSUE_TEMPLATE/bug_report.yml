@@ -1,0 +1,57 @@
+name: Bug report / 问题反馈
+description: Report a reproducible problem with setup, the studio or runtime.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请仅提供复现所需信息，删除密钥、账号、私人资料和完整运行历史。
+        Please remove credentials and personal data from screenshots and logs.
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题与预期 / Problem and expected behavior
+      description: 实际发生了什么？你期望发生什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交 / Version or commit
+      placeholder: v0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境 / Environment
+      description: 操作系统、Node 版本；涉及桌面时请写明窗口/音频环境。
+      placeholder: macOS / Windows / Linux; Node version
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 发生场景 / Context
+      options:
+        - Setup or offline checks / 安装或离线检查
+        - Studio or programme window / 舞台或节目窗口
+        - Simulated runtime / 模拟运行
+        - Real adapter integration / 真实适配接入
+        - Documentation / 文档
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据 / Evidence
+      description: 最小错误片段、已脱敏截图、实际效果和未确认项；不要粘贴完整日志或角色资料。

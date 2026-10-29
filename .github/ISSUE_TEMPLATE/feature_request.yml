@@ -1,0 +1,30 @@
+name: Feature request / 功能建议
+description: Propose an integration or improvement with a clear use case.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: usecase
+    attributes:
+      label: 使用场景 / Use case
+      description: 谁需要这个能力？当前哪一步无法完成？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案 / Proposal
+      description: 描述希望出现的行为，以及会涉及的模型、游戏或平台（如适用）。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验证方式 / Acceptance evidence
+      description: 用什么实际结果判断功能可用？请区分模拟效果和真实输出。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 替代方案与补充 / Alternatives and context
+      description: 可附公开文档或相关实现链接，不要提供私密账号资料。

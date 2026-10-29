@@ -1,0 +1,17 @@
+node_modules/
+.local/
+.agents/
+.env
+.env.*
+!.env.example
+dist/
+artifacts/
+coverage/
+*.log
+*.jsonl
+*.sqlite*
+*.db
+*.pem
+*.key
+.DS_Store
+Thumbs.db

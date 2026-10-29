@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI 直播工作流"
+  short_description: "从空白配置游戏、双主播、互动和舞台工作流，支持使用者自选 AI 与模型"
+  default_prompt: "使用 $ai-streamer-workflow 为这个项目配置 AI 实况工作流，先识别已有软件和 AI 能力，再创建我需要的岗位并验证实际接入。"
+policy:
+  allow_implicit_invocation: true

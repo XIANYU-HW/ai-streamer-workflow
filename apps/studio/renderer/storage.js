@@ -1,0 +1,1 @@
+(function(root){'use strict';if(!root.studioDesktop)throw new Error('请从桌面应用打开工作室。');root.StudioStorage={load:()=>root.studioDesktop.load(),save:(data,revision)=>root.studioDesktop.save(data,revision)};})(globalThis);

@@ -1,0 +1,20 @@
+{
+  "name": "ai-streamer-studio-public",
+  "productName": "AiStreamerStudioPublic",
+  "version": "0.1.0",
+  "description": "Blank local character, stage and memory studio with opt-in voice services",
+  "main": "main.cjs",
+  "type": "commonjs",
+  "private": true,
+  "license": "MIT",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "prepare": "node scripts/prepare.cjs",
+    "smoke": "node scripts/smoke.cjs",
+    "build:mac": "node scripts/build.cjs darwin",
+    "build:win": "node scripts/build.cjs win32"
+  },
+  "devDependencies": {"electron": "45.0.0"}
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "status": "UNCONFIGURED",
+  "hosts": [
+    { "id": "host_a", "displayName": "主播 A", "profile": "", "provider": null, "model": null, "reasoning": null, "voice": null },
+    { "id": "host_b", "displayName": "主播 B", "profile": "", "provider": null, "model": null, "reasoning": null, "voice": null }
+  ],
+  "models": { "selection": "user_choice", "requiredModel": null, "requiredTier": null },
+  "rotation": { "intervalSeconds": 900, "trigger": "elapsed_time", "fallSwitch": false },
+  "conversation": { "bothHostsMaySpeak": true, "idleSentencesPerMinute": { "min": 3, "max": 5 }, "giftPriority": true, "replyToEveryComment": false },
+  "assistance": { "playerRequested": true, "minimumChangeIntervalSeconds": 1800, "resetOnAgentHandoff": false },
+  "cost": { "paidEnabled": false, "limitUSD": 0, "autoRecharge": false },
+  "adapters": { "game": null, "voice": null, "chat": null, "broadcast": null, "model": null },
+  "broadcast": { "enabled": false, "platform": null, "software": null },
+  "run": { "autoStart": false, "durationSeconds": 600, "startCondition": "verified_actual_output" },
+  "roles": [
+    { "id": "coordinator", "name": "项目统筹", "mode": "on_demand", "provider": null, "model": null, "reasoning": null },
+    { "id": "broadcast-director", "name": "直播导播", "mode": "during_run", "provider": null, "model": null, "reasoning": null },
+    { "id": "gameplay-performer", "name": "游戏实况执行", "mode": "during_run", "provider": null, "model": null, "reasoning": null },
+    { "id": "audience-manager", "name": "观众互动管理", "mode": "during_run", "provider": null, "model": null, "reasoning": null },
+    { "id": "game-adaptation-engineer", "name": "游戏适配工程师", "mode": "on_demand", "provider": null, "model": null, "reasoning": null },
+    { "id": "studio-engineer", "name": "舞台与声音工程师", "mode": "on_demand", "provider": null, "model": null, "reasoning": null },
+    { "id": "reviewer", "name": "独立验收", "mode": "event_driven", "provider": null, "model": null, "reasoning": null }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@ai-streamer/programme-host",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Silent local public programme window with an empty default screen",
+  "main": "main.cjs",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "prepare": "node scripts/check.cjs",
+    "manifest": "node scripts/manifest.cjs",
+    "build:mac": "node scripts/build.cjs --platform darwin",
+    "build:win": "node scripts/build.cjs --platform win32",
+    "smoke": "node scripts/smoke.cjs"
+  },
+  "devDependencies": { "electron": "45.0.0" }
+}

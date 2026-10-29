@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="580" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
+  <title id="title">Nichang — seven roles, one coordinated workflow</title>
+  <desc id="desc">The coordinator guides five specialist roles: broadcast director, gameplay performer, audience manager, game adaptation engineer, and studio and voice engineer. An independent reviewer validates outcomes. Real model, game, voice, chat and broadcast adapters must be connected by the user. This is a workflow overview, not proof of a running autonomous stream.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#201e3e"/><stop offset="1" stop-color="#12152b"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="m2 1 6 4-6 4" fill="none" stroke="#82799f" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1200" height="580" rx="20" fill="url(#bg)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif">
+    <text x="40" y="49" font-size="25" font-weight="650" fill="#f7efdf">Seven roles. One crew.</text>
+    <text x="1160" y="48" text-anchor="end" font-size="14" fill="#a6a1bd">Workflow overview · adapters required</text>
+    <!-- Direction -->
+    <rect x="434" y="85" width="332" height="80" rx="14" fill="#263d43" stroke="#80cbb7" stroke-width="1.4"/>
+    <circle cx="470" cy="125" r="16" fill="#a9ecd1"/>
+    <path d="m470 115 6 10-6 10-6-10Z" fill="#243644"/>
+    <text x="501" y="119" font-size="21" font-weight="650" fill="#e0ffef">项目统筹</text>
+    <text x="501" y="144" font-size="14" fill="#a5d4c8">Coordinator · direction &amp; priorities</text>
+    <!-- Shared branch -->
+    <g fill="none" stroke="#77708f" stroke-width="1.3"><path d="M600 165v25M146 190h908"/><path d="M146 190v26M373 190v26M600 190v26M827 190v26M1054 190v26" marker-end="url(#arrow)"/></g>
+    <!-- Five operating roles -->
+    <g>
+      <rect x="40" y="224" width="212" height="105" rx="13" fill="#2b2749" stroke="#5c527a"/>
+      <text x="57" y="249" font-size="12" letter-spacing="1.5" fill="#b3a5df">01 / DIRECTION</text>
+      <text x="57" y="279" font-size="20" font-weight="600" fill="#eee6fc">直播导播</text>
+      <text x="57" y="307" font-size="14" fill="#bcb3d1">Broadcast director</text>
+      <rect x="267" y="224" width="212" height="105" rx="13" fill="#20383f" stroke="#426761"/>
+      <text x="284" y="249" font-size="12" letter-spacing="1.5" fill="#99d8c1">02 / PERFORMANCE</text>
+      <text x="284" y="279" font-size="20" font-weight="600" fill="#dbf6e9">游戏实况执行</text>
+      <text x="284" y="307" font-size="14" fill="#b3cfc6">Gameplay performer</text>
+      <rect x="494" y="224" width="212" height="105" rx="13" fill="#3d2c3d" stroke="#715365"/>
+      <text x="511" y="249" font-size="12" letter-spacing="1.5" fill="#e9aeab">03 / INTERACTION</text>
+      <text x="511" y="279" font-size="20" font-weight="600" fill="#fae3df">观众互动管理</text>
+      <text x="511" y="307" font-size="14" fill="#d2b5c0">Audience manager</text>
+      <rect x="721" y="224" width="212" height="105" rx="13" fill="#2b3047" stroke="#525f7c"/>
+      <text x="738" y="249" font-size="12" letter-spacing="1.5" fill="#adc0e9">04 / ADAPTATION</text>
+      <text x="738" y="279" font-size="20" font-weight="600" fill="#e2eafb">游戏适配工程师</text>
+      <text x="738" y="307" font-size="14" fill="#b9c4dc">Game adaptation engineer</text>
+      <rect x="948" y="224" width="212" height="105" rx="13" fill="#3b3338" stroke="#716166"/>
+      <text x="965" y="249" font-size="12" letter-spacing="1.5" fill="#e9c29e">05 / PRODUCTION</text>
+      <text x="965" y="279" font-size="20" font-weight="600" fill="#f8e9d9">舞台与声音工程师</text>
+      <text x="965" y="307" font-size="14" fill="#d5c2b7">Studio &amp; voice engineer</text>
+    </g>
+    <!-- Independent result review -->
+    <g fill="none" stroke="#77708f" stroke-width="1.2" stroke-dasharray="4 5"><path d="M146 329v21h908v-21M373 329v21M600 329v21M827 329v21M600 350v22"/></g>
+    <rect x="434" y="374" width="332" height="66" rx="13" fill="#28273b" stroke="#8d829e" stroke-dasharray="4 3"/>
+    <circle cx="470" cy="407" r="14" fill="none" stroke="#e9dbb9" stroke-width="1.6"/>
+    <path d="m464 407 4 4 8-9" fill="none" stroke="#e9dbb9" stroke-width="2" stroke-linecap="round"/>
+    <text x="501" y="402" font-size="19" font-weight="600" fill="#f1e8d2">独立验收</text>
+    <text x="501" y="425" font-size="14" fill="#b9b0c8">Reviewer · evidence before claims</text>
+    <!-- Integration boundary -->
+    <path d="M40 466h1120" stroke="#4b435d"/>
+    <text x="40" y="498" font-size="13" letter-spacing="1.2" fill="#a59dbb">CONNECT YOUR OWN</text>
+    <g font-size="16" fill="#e9e3ef">
+      <text x="293" y="498">AI / Model</text><text x="478" y="498">Game</text><text x="634" y="498">Voice</text><text x="792" y="498">Chat &amp; gifts</text><text x="1001" y="498">Broadcast</text>
+    </g>
+    <text x="40" y="545" font-size="15" fill="#8f88a7">Default: two host profiles · one control lease · one speech queue · stop on request</text>
+    <text x="1160" y="545" text-anchor="end" font-size="11" fill="#8f88a7">NICHANG · AI STREAMER WORKFLOW</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "name": "ai-streamer-workflow",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "test": "node scripts/test.mjs",
+    "demo": "node packages/runtime/demo.mjs",
+    "studio": "node scripts/launch.mjs studio",
+    "programme": "node scripts/launch.mjs programme-host",
+    "check:release": "node scripts/check-release.mjs",
+    "release": "node scripts/build-release.mjs"
+  }
+}
