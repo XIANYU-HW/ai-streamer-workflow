@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="Nichang — AI Streamer Workflow." width="100%">
+<img src="assets/hero.jpg" alt="Nichang — AI Streamer Workflow." width="100%">
 
 # Nichang · 霓裳
 
 **AI Streamer Workflow**
 
-**Set up your AI broadcast crew. Bring multiple AI hosts onto one stage.**
+**Your all-in-one AI team for automated livestreaming.**
 
-An open-source workflow kit working toward autonomous livestreams, from setup to wrap-up.
+Give your hosts their own backstories, lasting memories, and a changing cast of companions.
 
 [![Verify source](https://github.com/XIANYU-HW/ai-streamer-workflow/actions/workflows/verify.yml/badge.svg)](https://github.com/XIANYU-HW/ai-streamer-workflow/actions/workflows/verify.yml)
 [![MIT](https://img.shields.io/badge/license-MIT-79DFC1?style=flat-square)](../LICENSE)
@@ -17,21 +17,53 @@ An open-source workflow kit working toward autonomous livestreams, from setup to
 
 [简体中文](../README.md) · **English**
 
-[Quick start](#quick-start) · [Studio preview](#studio-preview) · [Integration guide](../packages/runtime/INTEGRATION.md) · [Contribute](contributing.md)
+[Quick start](#quick-start) · [Live showcase](#real-livestream-showcase) · [Characters & memory](#characters-with-stories-memories-and-companions) · [Studio](#studio-preview) · [Integration guide](../packages/runtime/INTEGRATION.md) · [Contribute](contributing.md)
 
 </div>
 
-> **v0.1.0 · First public preview · Under active development**  
-> Nichang is an early version with known rough edges. Work will continue on fixes, integrations, and usability. Reproducible reports are welcome; see [known limitations](known-limitations.md) and the [roadmap](roadmap.md).  
-> Includes a studio, seven role templates, a two-host orchestration core, and an offline demo. Setup prepares the applications and role prompts. Actual agent sessions, models, voices, game controls, and streaming platforms still require integration. **A full broadcast without step-by-step human guidance is the project goal, not an end-to-end capability verified by this release.**
+<sub>The cover is an AI-generated ensemble of community-inspired GPT, DeepSeek, Claude, Gemini, Grok, and Kimi personifications. Characters are not bundled with the source. See [visual notes](showcase.md).</sub>
+
+> **v0.1.0 · First public preview · Under active development**
+> Includes a character studio, separate memory records, seven role templates, and a broadcast coordination core. Known issues remain, and real models, voices, games, and platforms require integration. Fully autonomous end-to-end broadcasts remain a development goal. [Known limitations](known-limitations.md) · [Roadmap](roadmap.md)
+
+## Characters with stories, memories, and companions
+
+Build a cast with individual histories and personalities, then let them share the stage.
+
+| 🎭 Custom identities and backstories | 📖 Lasting memories for each character | ✨ Mix and match your cast |
+| :--- | :--- | :--- |
+| Define every host's name, backstory, personality, appearance, forms of address, and voice | Keep confirmed experiences in separate character records and carry them into later sessions | Reuse characters across scenes and partnerships while preserving their identity and memories; stage up to four characters per session |
+
+**Give your cast a history.** Save, export, and restore characters, scenes, sessions, and memories locally. Each new session can include that character's confirmed past; a companion's private backstory and memories are not automatically shared.
+
+*Current memory flow: record session events → create drafts for characters who witnessed them → confirm → include in later session context. Automatic capture from real livestreams, memory extraction, and model responses still require integration. The default broadcast template uses two hosts; four-person casting is a studio feature.*
+
+## Real livestream showcase
+
+**GPT and DeepSeek take on Getting Over It.** These frames were saved during the project's early public trial stream on October 29, 2026, preserving the real game and character layout.
+
+![Programme output during a public trial stream with GPT and DeepSeek](assets/live-gameplay.png)
+
+*After game recovery, 03:55 New York time. The top bar visibly shows GPT paused.*
+
+<details>
+<summary><b>Another frame: the two hosts at the first tree</b></summary>
+
+![Real trial-stream frame near the first tree with a handoff-in-progress status](assets/live-handoff.png)
+
+*04:26 New York time. The top bar shows a handoff in progress. No elements were redrawn or replaced.*
+
+</details>
+
+*Captured from the internal integrated programme output while the public stream was active. This is not an out-of-the-box result of the public v0.1.0 package, which requires adapters. The frames do not verify viewer-side delivery, audience replies, or autonomous end-to-end operation. [Media provenance and scope](showcase.md)*
 
 ## A crew for the whole show
 
-Running a livestream involves more than generating speech. Gameplay, hosting, audience responses, stage production, and shutdown need to work together. This kit separates those responsibilities into seven roles, while leaving the AI, characters, game, and platform up to you.
+Gameplay, hosting, audience responses, stage production, and shutdown need to work together. Nichang separates these responsibilities into seven roles, while leaving the AI, characters, game, and platform up to you.
 
-| Assemble a team | Coordinate two hosts | Build a complete workflow |
+| Prepare a team | Coordinate hosts | Connect the workflow |
 | :--- | :--- | :--- |
-| Seven role prompts and an Agent Skill; no prescribed model provider | Host A/B configuration, player rotation, and one shared speech queue | Integration checks, bounded rehearsals, operation, recovery, and shutdown evidence |
+| Setup prepares the apps, seven role prompts, and an Agent Skill | Default A/B hosts, player rotation, and one shared speech queue | Integration checks, rehearsals, operation, recovery, and shutdown evidence |
 
 ## Studio preview
 
@@ -96,7 +128,8 @@ and models. Check the integrations and list missing adapters. Do not start a bro
 
 | Component | Available now | Still required |
 | :--- | :--- | :--- |
-| Studio | Blank character library, scene/character editing, voice settings, stage source | Your assets, voices, animations, and capture setup |
+| Studio | Character backstories, scene editing, up to four-character staging, separate voice settings | Your assets, voices, animations, and capture setup |
+| Character memory | Per-character isolation, draft review, cross-session context, local storage and backup | Live event capture, automatic extraction, and model integration |
 | Runtime | Exclusive control lease, one speech queue, gift priority/deduplication, rotation, health, stop state | Persistent integration host and real drivers |
 | Games | Adapter contract and a dedicated role | Per-game observation, input, and real-device tests |
 | Audience | Standard event contract and simulated events | Permitted platform event sources and real gift verification |

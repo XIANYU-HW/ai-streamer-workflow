@@ -337,19 +337,19 @@
       "sha256": "4b8e6dd694dd32df9fa846f408f6233f7138cb950da9c0e6a3875766c888d709"
     },
     {
-      "file": "docs/assets/hero.svg",
-      "bytes": 9299,
-      "sha256": "3728d4c83291fae3a1bcb46dede252c78621d0d96c68cab00c2dad674d0da280"
+      "file": "docs/assets/hero.jpg",
+      "bytes": 747040,
+      "sha256": "cb468b419aceb615e32be2c718cd820953b5076e285dfe6927b873b7369fa24c"
     },
     {
-      "file": "docs/assets/social-preview.png",
-      "bytes": 204100,
-      "sha256": "c62d5e0d700e3595ddb98f359bf04b42bee86d426b3927c5292ed36c27e1034b"
+      "file": "docs/assets/live-gameplay.png",
+      "bytes": 579142,
+      "sha256": "428f7f667428c00bbfccaca66e8ad86966363a7fee1494c17ebc4c9cdc954caf"
     },
     {
-      "file": "docs/assets/social-preview.svg",
-      "bytes": 9015,
-      "sha256": "7cd47aa1d2c321578c75a8a6a8d1d53a7f765fccb1199ae5b07540ea217d3543"
+      "file": "docs/assets/live-handoff.png",
+      "bytes": 593497,
+      "sha256": "aa589bf00071e6a653c9a95d9c80de84c5a604aca2970cb7c8ff9b3734301b20"
     },
     {
       "file": "docs/assets/studio-preview.png",
@@ -378,8 +378,8 @@
     },
     {
       "file": "docs/README.en.md",
-      "bytes": 8226,
-      "sha256": "97b5a89c52296d34258073e7f2aa1def3776569e18a708cbb7dc7df747eebf5e"
+      "bytes": 10590,
+      "sha256": "95bb458ac5df65cd9157d303d47382fd9af5af4a979d12f099b9afea214846f2"
     },
     {
       "file": "docs/release.md",
@@ -388,8 +388,13 @@
     },
     {
       "file": "docs/roadmap.md",
-      "bytes": 2799,
-      "sha256": "6eb36e75ffcc1decfbd4ef5f4aac417420d97b23f871526a16fecdf026ed413f"
+      "bytes": 3026,
+      "sha256": "4f2213381075809b9ad2f63cacd9a9b75b6d98002be40b30dd65b0be46b93f44"
+    },
+    {
+      "file": "docs/showcase.md",
+      "bytes": 3898,
+      "sha256": "726eeacb9f96bccee57c9e2140d140749e6b45ef39a623869f02329b5057126a"
     },
     {
       "file": "docs/verification-status.md",
@@ -443,8 +448,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 8485,
-      "sha256": "7496aa016007d5b8f0ec2278379a63e97ac47dcf712b7a445de6615d0e59bb12"
+      "bytes": 10667,
+      "sha256": "6ec509cb67f17b66c016a2dcdb500b2aed6391ff9ce8e2fa2bcde4011c64f570"
     },
     {
       "file": "scripts/build-release.mjs",
@@ -528,8 +533,8 @@
     },
     {
       "file": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1319,
-      "sha256": "776dfa3f11a8ed601a0dd1c5d6a29b5126d545d4db3612bc1b0aa3025271afb2"
+      "bytes": 1733,
+      "sha256": "d75bd1c870151a7b9836f09732e512473ff4083d80f14dce8025d883bb6de1de"
     }
   ]
 }
